@@ -18,7 +18,7 @@
   
   
   ## era 5 land downloded data
-  ERA5Land= brick(paste("D:/ERA5L/temp/2m_temperature1981.nc"))
+  ERA5Land= brick(paste("D:/ERA5L/temp/geopotential.nc"))
   
   ## location point to extract the data 
   location = cbind(86.778,	27.9831)
@@ -32,6 +32,6 @@
   
   data_f= data.frame(location1 = location, location2 = location2)
   
-  write.csv(data_f, "D:/ERA5L/2m_temp_era5land.csv")
+  write.csv(data_f, "D:/ERA5L/grid_elevation.csv")
   
 }
