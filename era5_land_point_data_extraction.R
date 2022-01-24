@@ -25,7 +25,7 @@
   location2 = cbind(86.778,	26.9831)
   
   ## data extraction
-  era_2m_temperature_1981  <- as.numeric(raster::extract(aa, location))/9.80665
+  era_2m_temperature_1981  <- as.numeric(raster::extract(aa, location))/9.81
   era_2m_temperature_198  <- as.numeric(raster::extract(aa, location2))/9.81
   
   
