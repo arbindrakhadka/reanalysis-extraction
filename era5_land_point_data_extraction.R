@@ -6,6 +6,7 @@
 
 
 # data extraction code for era5 land data
+## this is one example how to extract grid elevation form geopotential height data of ERA5 Land
 {rm(list=ls())
   
   setwd("D:/ERA5L/geopotential//")
