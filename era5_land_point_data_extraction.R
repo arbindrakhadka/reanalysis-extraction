@@ -18,15 +18,15 @@
   
   
   ## era 5 land downloded data
-  ERA5Land= brick(paste("D:/ERA5L/temp/geopotential.nc"))
+  ERA5Land= brick(paste("D:/ERA5L/geopotential.nc"))
   
   ## location point to extract the data 
   location = cbind(86.778,	27.9831)
   location2 = cbind(86.778,	26.9831)
   
   ## data extraction
-  era_2m_temperature_1981  <- as.numeric(raster::extract(aa, location))/9.81
-  era_2m_temperature_198  <- as.numeric(raster::extract(aa, location2))/9.81
+  era_2m_temperature_1981  <- as.numeric(raster::extract(ERA5Land, location))/9.81
+  era_2m_temperature_198  <- as.numeric(raster::extract(ERA5Land, location2))/9.81
   
   
   
